@@ -242,9 +242,9 @@ server <- function(input, output, session) {
 
     layout_columns(
       col_widths = c(4, 4, 4),
-      value_box("Leader", top$player, paste0(top$weighted_score, " points"), showcase = bsicons::bs_icon("trophy")),
-      value_box("Ballots with a vote", n_ballots, "in this category", showcase = bsicons::bs_icon("people")),
-      value_box("Scoring", paste(input$w1, input$w2, input$w3, sep = "–"), "1st – 2nd – 3rd", showcase = bsicons::bs_icon("123"))
+      value_box("Leader", top$player, paste0(top$weighted_score, " points"), showcase = "🏆"),
+      value_box("Ballots with a vote", n_ballots, "in this category", showcase = "👥"),
+      value_box("Scoring", paste(input$w1, input$w2, input$w3, sep = "–"), "1st – 2nd – 3rd", showcase = "•")
     )
   })
 
